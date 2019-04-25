@@ -6,6 +6,11 @@ let databaseConnection = require('./data/database/mongo_connect');
 
 const PORT = process.env.port || 8080;
 
+// Load dotenv
+if (process.env.NODE_ENV !== 'production') {
+    require('dotenv').config();
+}
+
 // Initialize new express instance
 let server = express();
 
@@ -14,6 +19,8 @@ server.use(bodyParser.json());
 
 // Enable CORS to allow Cross-Origin requests
 server.use(cors());
+
+
 
 // Establish connection with Mongo DB
 databaseConnection.connectToDB();

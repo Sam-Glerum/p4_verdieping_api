@@ -68,7 +68,8 @@ module.exports = class userRepo {
                     res.status(412).json(new jsonModel(reqUrl, httpMethod, 412, "Password is incorrect"));
                 }
             })
-            .catch(() => {
+            .catch((error) => {
+                console.log(error);
                 res.status(404).json(new jsonModel(reqUrl, httpMethod, 404, "User not found"));
             })
     }

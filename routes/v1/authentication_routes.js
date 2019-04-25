@@ -47,7 +47,7 @@ router.post('/login', (req, res) => {
     const loginInfo = req.body;
 
     // Check if all the properties are present
-    if (checkObjects.isValidLogin(loginInfo)) {
+    if (!checkObjects.isValidLogin(loginInfo)) {
         res.status(412).json(new jsonModel("/api/login", "POST", 412, "Request body properties are invalid or missing"));
     } else {
 
