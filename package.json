@@ -1,0 +1,31 @@
+{
+  "name": "p4_verdieping_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sam-Glerum/p4_verdieping_api.git"
+  },
+  "author": "Sam Glerum",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sam-Glerum/p4_verdieping_api/issues"
+  },
+  "homepage": "https://github.com/Sam-Glerum/p4_verdieping_api#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "isemail": "^3.2.0",
+    "jwt-simple": "^0.5.6",
+    "moment": "^2.24.0",
+    "mongoose": "^5.5.4",
+    "node": "^11.14.0"
+  }
+}
